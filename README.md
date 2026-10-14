@@ -1,8 +1,16 @@
-# Markdown 个人博客模板
+# Leo LING 的个人博客
 
-这是一个不需要 Node.js、npm 或 React 的 Jekyll 静态博客模板。
+基于 [nice-template](https://github.com/yejianqin61-cell/nice-template) 搭建，是一个不需要 Node.js、npm 或 React 的 Jekyll 静态博客。
 
-## 学生开箱步骤
+- 仓库：https://github.com/Leo-L1NG/my-blog
+- 网址：https://leo-l1ng.github.io/my-blog/
+
+## 这份 README 与模板的区别
+
+本仓库已经在模板基础上做了个人化修改：站点标题与描述、导航、页脚链接、首页文案与项目卡片、关于页、配色，以及 `_posts/` 中的文章。
+以下步骤保留作为参考，前两步（创建仓库、启用 Pages）已经完成。
+
+## 开箱步骤
 
 1. 打开模板仓库，点击 **Use this template → Create a new repository**。
 2. 填写自己决定的仓库名称和公开/私有可见性。
@@ -72,12 +80,32 @@ GitHub Pages URL
 
 学生不需要在本地安装 Ruby、Jekyll、Node.js 或 npm。构建发生在 GitHub Actions 上。
 
-## Agent 提示词
+## 这个仓库里各文件的作用
 
-```text
-/goal 这是一个 Jekyll 静态博客项目。请先读取 README、_config.yml、index.html、_layouts 和 _posts。
-以后新增文章时，只在 _posts/ 中创建 YYYY-MM-DD-title.md，并使用现有 Front Matter 和 layout: post。
-不要引入 React、Vue、Node.js、npm、外部 CDN 或新的构建工具。
-修改前先列出文件和计划；修改后检查 Markdown Front Matter、文章链接、相对资源路径和 Git diff。
-我确认目标仓库后，才执行 git commit 和 git push。
+| 文件 | 改它的场合 |
+| --- | --- |
+| `_config.yml` | 改站点标题、描述、语言 |
+| `index.html` | 改首页文案、头像首字母、项目卡片 |
+| `_layouts/default.html` | 改导航栏、页脚（GitHub 链接、邮箱） |
+| `_layouts/post.html` | 改文章页排版 |
+| `about.md` | 改「关于我」页面 |
+| `assets/style.css` | 改配色与排版（颜色集中在文件开头的 `:root` 变量里） |
+| `_posts/*.md` | 新增和修改文章 |
+
+## 本站遵守的约束
+
+- 不引入 React、Vue、Node.js、npm、外部 CDN 或任何构建工具
+- 只使用纯 HTML、CSS 和 Markdown
+- 样式全部写在 `assets/style.css` 里，不依赖外部字体或脚本
+
+## 提交与推送
+
+改完文件后，在本仓库目录执行：
+
+```bash
+git add -A
+git commit -m "说明这次改了什么"
+git push
 ```
+
+推送后 workflow 会自动重新构建，通常 1～2 分钟后网站更新。

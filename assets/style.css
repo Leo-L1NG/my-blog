@@ -1,13 +1,13 @@
 :root {
-  --ink: #29263c;
-  --muted: #706b7d;
+  --ink: #322a3f;
+  --muted: #6f6a7c;
   --paper: #fffaf7;
   --paper-2: #fff0f2;
-  --pink: #e66c8d;
-  --pink-dark: #b8496b;
+  --pink: #e2567f;
+  --pink-dark: #a83a5e;
   --lilac: #9b8cf4;
   --mint: #8acbb5;
-  --line: rgba(41, 38, 60, .13);
+  --line: rgba(50, 42, 63, .13);
   --shadow: 0 18px 45px rgba(89, 55, 80, .12);
   --serif: Georgia, "Noto Serif SC", "Songti SC", serif;
   --sans: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
@@ -18,7 +18,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   color: var(--ink);
-  background: radial-gradient(circle at 90% 4%, rgba(230,108,141,.14), transparent 22rem), linear-gradient(135deg, #fffaf7 0%, #f9f1f8 100%);
+  background: radial-gradient(circle at 90% 4%, rgba(226,86,127,.16), transparent 22rem), linear-gradient(135deg, #fffaf7 0%, #f9f1f8 100%);
   font-family: var(--sans);
   line-height: 1.7;
 }

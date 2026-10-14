@@ -1,7 +1,6 @@
-title: 你的名字 · 个人博客
-description: 一个可以持续写作的个人博客
+title: Leo LING · 个人博客
+description: Leo LING 的个人博客，记录正在学习的技术、做过的小项目和日常想法。
 lang: zh-CN
-timezone: Asia/Singapore
 markdown: kramdown
 permalink: /posts/:title/
 exclude:
