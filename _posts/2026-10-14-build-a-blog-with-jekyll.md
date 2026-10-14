@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 用 Jekyll 搭一个不需要 Node.js 的博客
-date: 2026-10-15
+date: 2026-10-14
 excerpt: 不装 Node.js、不装 npm、不引外部 CDN，只靠 Markdown 加 GitHub Actions，就能拥有一个能持续写作的个人博客。
 tags:
   - Jekyll

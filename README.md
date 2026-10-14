@@ -22,6 +22,18 @@
 
 注意：仓库里的 `index.html` 是 Jekyll 模板源码，不能靠双击本地文件看到最终页面；最终 HTML 会由 GitHub Actions 生成。学生不需要在电脑上安装 Ruby、Jekyll、Node.js 或 npm。
 
+## 关于文章日期（重要）
+
+文章的**文件名日期**和 Front Matter 里的 date 必须是**今天或更早**。
+
+GitHub Actions 运行在 **UTC 时区**。如果你在中国时间凌晨（UTC 前一天）提交一篇日期写着今天的文章，Jekyll 会认为它是**未来文章**并静默跳过——文章不会出现在首页，构建日志里只有一行：
+
+```text
+Skipping: _posts/xxx.md has a future date
+```
+
+**做法**：日期比本地日期早一天最保险。例如本地是 10 月 15 日凌晨，文件名和 date 就写 2026-10-14。
+
 ## 写一篇新文章
 
 在 `_posts/` 中复制示例文章，文件名使用：
