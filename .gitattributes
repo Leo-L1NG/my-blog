@@ -1,0 +1,16 @@
+# 统一换行符，避免 Windows 的 CRLF 影响 GitHub Actions 上的构建
+* text=auto
+
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
